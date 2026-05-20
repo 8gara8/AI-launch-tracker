@@ -72,7 +72,7 @@ export function MonthlyChart({
             {visibleRows.map((row) => (
               <div
                 key={row.label}
-                className="relative flex items-end justify-center gap-0.5 sm:gap-1"
+                className="relative flex items-stretch justify-center gap-0.5 sm:gap-1 h-full"
               >
                 {row.byCompany.map(({ company, count }) => {
                   const heightPct = (count / max) * 100;
@@ -80,26 +80,26 @@ export function MonthlyChart({
                   return (
                     <div
                       key={company.id}
-                      className="flex-1 relative group"
-                      style={{ minHeight: "2px" }}
+                      className="flex-1 relative group flex flex-col justify-end"
                     >
                       <div
-                        className="w-full rounded-sm transition-all"
+                        className="relative w-full rounded-sm transition-all"
                         style={{
                           height: `${heightPct}%`,
                           background: company.color,
                           opacity: dimmed ? 0.18 : count > 0 ? 0.92 : 0,
                           minHeight: count > 0 ? "3px" : 0,
                         }}
-                      />
-                      {count > 0 && (
-                        <div
-                          className="absolute -top-5 left-1/2 -translate-x-1/2 text-2xs text-ink-muted opacity-0 group-hover:opacity-100 transition tabular-nums whitespace-nowrap"
-                          style={{ color: company.color }}
-                        >
-                          {count}
-                        </div>
-                      )}
+                      >
+                        {count > 0 && (
+                          <div
+                            className="absolute -top-5 left-1/2 -translate-x-1/2 text-2xs opacity-0 group-hover:opacity-100 transition tabular-nums whitespace-nowrap"
+                            style={{ color: company.color }}
+                          >
+                            {count}
+                          </div>
+                        )}
+                      </div>
                     </div>
                   );
                 })}

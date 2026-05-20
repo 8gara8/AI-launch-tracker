@@ -64,7 +64,7 @@ export function Timeline({
             {group.items.map((launch) => {
               const company = companyMap.get(launch.company);
               const meta = CATEGORY_META[launch.category];
-              const id = `${launch.date}-${launch.label}`;
+              const id = `${launch.date}-${launch.company}-${launch.label}`;
               const isOpen = expanded === id;
               const d = parseLocalDate(launch.date);
               const day = String(d.getDate()).padStart(2, "0");
