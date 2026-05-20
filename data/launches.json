@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "last_updated": "2026-05-20",
+    "week_number": 20,
+    "tracked_since": "2026-01-01"
+  },
+  "companies": [
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "product": "Claude",
+      "color": "#D97706"
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "product": "ChatGPT",
+      "color": "#059669"
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "product": "Gemini",
+      "color": "#2563EB"
+    },
+    {
+      "id": "xai",
+      "name": "xAI",
+      "product": "Grok",
+      "color": "#7C3AED"
+    }
+  ],
+  "launches": [
+    {
+      "company": "anthropic",
+      "date": "2026-01-15",
+      "label": "Claude Opus 4.6",
+      "category": "model",
+      "description": "1M token context window, strongest reasoning model on the market. Tops SWE-bench Verified at 84%."
+    },
+    {
+      "company": "anthropic",
+      "date": "2026-01-28",
+      "label": "Claude Code on the Web",
+      "category": "product",
+      "description": "Browser-based Claude Code with remote execution. No local install required. GitHub integration built in."
+    },
+    {
+      "company": "anthropic",
+      "date": "2026-02-11",
+      "label": "Agent SDK 1.0",
+      "category": "api",
+      "description": "Stable release of the Claude Agent SDK with managed agents, subagent support, and built-in memory."
+    },
+    {
+      "company": "anthropic",
+      "date": "2026-03-04",
+      "label": "Claude Sonnet 4.6",
+      "category": "model",
+      "description": "New mid-tier model. 50% cheaper than Opus, matches Opus 4.5 on most benchmarks."
+    },
+    {
+      "company": "anthropic",
+      "date": "2026-03-19",
+      "label": "Skills marketplace",
+      "category": "product",
+      "description": "Public marketplace for Claude skills. Verified publishers, install with one command."
+    },
+    {
+      "company": "anthropic",
+      "date": "2026-04-08",
+      "label": "Claude for Enterprise",
+      "category": "strategic",
+      "description": "Enterprise tier with SSO, audit logs, data residency in EU and APAC. SOC 2 Type II."
+    },
+    {
+      "company": "anthropic",
+      "date": "2026-04-22",
+      "label": "Claude Opus 4.7",
+      "category": "model",
+      "description": "1M token context with improved long-context retrieval. Best-in-class agentic coding."
+    },
+    {
+      "company": "anthropic",
+      "date": "2026-05-13",
+      "label": "Cowork",
+      "category": "product",
+      "description": "Background agent runtime. Claude executes scheduled tasks weekly without user prompting."
+    },
+
+    {
+      "company": "openai",
+      "date": "2026-01-09",
+      "label": "GPT-5.5",
+      "category": "model",
+      "description": "Incremental upgrade to GPT-5. Improved tool use, reduced hallucinations on factual queries."
+    },
+    {
+      "company": "openai",
+      "date": "2026-01-22",
+      "label": "ChatGPT Tasks GA",
+      "category": "product",
+      "description": "Scheduled and triggered tasks promoted from beta to general availability."
+    },
+    {
+      "company": "openai",
+      "date": "2026-02-05",
+      "label": "Sora 2",
+      "category": "product",
+      "description": "Next-gen video generation. 60-second clips, 4K resolution, character consistency across shots."
+    },
+    {
+      "company": "openai",
+      "date": "2026-02-26",
+      "label": "Realtime API v2",
+      "category": "api",
+      "description": "Lower latency voice + vision realtime API. WebRTC support, 50% price reduction."
+    },
+    {
+      "company": "openai",
+      "date": "2026-03-12",
+      "label": "ChatGPT Atlas",
+      "category": "product",
+      "description": "Native browser with ChatGPT baked in. Multi-tab agent mode, built-in research workflows."
+    },
+    {
+      "company": "openai",
+      "date": "2026-04-02",
+      "label": "GPT-6 preview",
+      "category": "model",
+      "description": "Private preview to enterprise customers. Multimodal-native, no separate vision/audio models."
+    },
+    {
+      "company": "openai",
+      "date": "2026-04-29",
+      "label": "Operator GA",
+      "category": "product",
+      "description": "Computer-use agent leaves beta. Available on all Plus and Pro tiers."
+    },
+    {
+      "company": "openai",
+      "date": "2026-05-07",
+      "label": "OpenAI for Government",
+      "category": "strategic",
+      "description": "FedRAMP High authorization. Dedicated tenancy in US-Gov regions for federal customers."
+    },
+
+    {
+      "company": "google",
+      "date": "2026-01-21",
+      "label": "Gemini 3 Pro",
+      "category": "model",
+      "description": "2M token context. Native code execution, improved math reasoning, beats GPT-5.5 on MMLU-Pro."
+    },
+    {
+      "company": "google",
+      "date": "2026-02-04",
+      "label": "Gemini in Workspace (all tiers)",
+      "category": "product",
+      "description": "Gemini features rolled into every Workspace tier including Business Starter at no extra cost."
+    },
+    {
+      "company": "google",
+      "date": "2026-02-19",
+      "label": "Vertex Agent Builder",
+      "category": "api",
+      "description": "Drag-and-drop agent builder on Vertex AI. Connectors for 200+ enterprise systems."
+    },
+    {
+      "company": "google",
+      "date": "2026-03-11",
+      "label": "Project Mariner GA",
+      "category": "product",
+      "description": "Browser agent product moves from research to GA. Bundled with Gemini Advanced."
+    },
+    {
+      "company": "google",
+      "date": "2026-03-26",
+      "label": "Gemini 3 Ultra",
+      "category": "model",
+      "description": "Frontier tier of Gemini 3. Highest score on Humanity's Last Exam (38.4%)."
+    },
+    {
+      "company": "google",
+      "date": "2026-04-15",
+      "label": "AI Mode default in Search",
+      "category": "strategic",
+      "description": "AI Mode becomes the default Google Search experience in US and India."
+    },
+    {
+      "company": "google",
+      "date": "2026-05-06",
+      "label": "Gemini Live in Android Auto",
+      "category": "product",
+      "description": "Conversational agent integrated into Android Auto. Hands-free email, navigation, calendar."
+    },
+
+    {
+      "company": "xai",
+      "date": "2026-02-12",
+      "label": "Grok 4 Heavy",
+      "category": "model",
+      "description": "Multi-agent variant of Grok 4 with parallel reasoning. Closes gap with Opus 4.6 on coding."
+    },
+    {
+      "company": "xai",
+      "date": "2026-03-08",
+      "label": "Grok Imagine 2",
+      "category": "product",
+      "description": "Image + video generation. Open-weights image model, hosted-only for video."
+    },
+    {
+      "company": "xai",
+      "date": "2026-04-18",
+      "label": "Grok API tiers",
+      "category": "api",
+      "description": "Restructured API pricing. Adds long-context tier at 1M tokens, on-par with Anthropic pricing."
+    },
+    {
+      "company": "xai",
+      "date": "2026-05-09",
+      "label": "Grok on X for Business",
+      "category": "strategic",
+      "description": "Grok agents integrated into X for Business accounts. Auto-reply, customer support workflows."
+    }
+  ],
+  "watch": [
+    "Grok 5 still not shipped — watch for Q2/Q3 release given Heavy variant arrived in Feb",
+    "OpenAI IPO preparations — product consolidation rumored (Operator + Atlas under one brand)",
+    "Google's Gemini 3 Ultra pricing vs. Claude Opus 4.7 — competitive squeeze on API margins",
+    "Anthropic's Cowork is the first scheduled-agent runtime from a frontier lab — expect copies",
+    "Apple has shipped nothing on-device of note in 2026 — partnership pivot likely"
+  ]
+}
