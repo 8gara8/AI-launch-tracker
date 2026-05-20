@@ -3,19 +3,12 @@
 import { useMemo, useState } from "react";
 import type { Category, Company, Launch, LaunchData } from "@/types";
 import { CATEGORY_META } from "@/types";
+import { formatLocalDate } from "@/lib/date";
 import { Scoreboard } from "./Scoreboard";
 import { MonthlyChart } from "./MonthlyChart";
 import { Timeline } from "./Timeline";
 
 const CATEGORIES: Category[] = ["model", "product", "api", "strategic"];
-
-function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  });
-}
 
 function buildSummary(
   launches: Launch[],
@@ -93,9 +86,9 @@ export function Dashboard({ data }: { data: LaunchData }) {
           <p className="text-ink-muted text-sm sm:text-base max-w-2xl leading-relaxed">
             Competitive intelligence on AI product launches from Anthropic,
             OpenAI, Google, and xAI. Last updated{" "}
-            <span className="text-ink">{formatDate(data.meta.last_updated)}</span>
+            <span className="text-ink">{formatLocalDate(data.meta.last_updated)}</span>
             . Tracking {data.launches.length} launches since{" "}
-            {formatDate(data.meta.tracked_since)}.
+            {formatLocalDate(data.meta.tracked_since)}.
           </p>
         </header>
 
@@ -234,10 +227,10 @@ export function Dashboard({ data }: { data: LaunchData }) {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-2xs uppercase tracking-wider text-ink-dim">
             <span>
               Updated weekly by Claude Cowork. Data since{" "}
-              {formatDate(data.meta.tracked_since)}.
+              {formatLocalDate(data.meta.tracked_since)}.
             </span>
             <span>
-              v{data.meta.week_number}.{new Date(data.meta.last_updated).getFullYear()}
+              v{data.meta.week_number}.{data.meta.last_updated.slice(0, 4)}
             </span>
           </div>
         </footer>

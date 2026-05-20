@@ -2,6 +2,7 @@
 
 import { useMemo } from "react";
 import type { Company, Launch } from "@/types";
+import { parseLocalDate } from "@/lib/date";
 
 const MONTHS = [
   "Jan",
@@ -30,7 +31,7 @@ export function MonthlyChart({
   const { rows, max } = useMemo(() => {
     const rows = MONTHS.map((label, i) => {
       const monthLaunches = launches.filter(
-        (l) => new Date(l.date).getMonth() === i,
+        (l) => parseLocalDate(l.date).getMonth() === i,
       );
       const byCompany = companies.map((c) => ({
         company: c,
@@ -44,7 +45,7 @@ export function MonthlyChart({
 
   // Show only Jan–current month (assume tracking 2026)
   const currentMonth = Math.max(
-    ...launches.map((l) => new Date(l.date).getMonth()),
+    ...launches.map((l) => parseLocalDate(l.date).getMonth()),
     0,
   );
   const visibleRows = rows.slice(0, Math.max(currentMonth + 1, 3));

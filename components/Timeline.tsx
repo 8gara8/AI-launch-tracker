@@ -3,12 +3,12 @@
 import { useState } from "react";
 import type { Company, Launch } from "@/types";
 import { CATEGORY_META } from "@/types";
+import { parseLocalDate, formatLocalDate } from "@/lib/date";
 
 function groupByMonth(launches: Launch[]) {
   const map = new Map<string, Launch[]>();
   for (const l of launches) {
-    const d = new Date(l.date);
-    const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
+    const key = l.date.slice(0, 7);
     if (!map.has(key)) map.set(key, []);
     map.get(key)!.push(l);
   }
@@ -16,10 +16,7 @@ function groupByMonth(launches: Launch[]) {
     .sort((a, b) => b[0].localeCompare(a[0]))
     .map(([key, items]) => ({
       key,
-      label: new Date(key + "-01").toLocaleDateString("en-US", {
-        month: "long",
-        year: "numeric",
-      }),
+      label: formatLocalDate(`${key}-01`, { month: "long", year: "numeric" }),
       items: items.sort((a, b) => b.date.localeCompare(a.date)),
     }));
 }
@@ -69,7 +66,7 @@ export function Timeline({
               const meta = CATEGORY_META[launch.category];
               const id = `${launch.date}-${launch.label}`;
               const isOpen = expanded === id;
-              const d = new Date(launch.date);
+              const d = parseLocalDate(launch.date);
               const day = String(d.getDate()).padStart(2, "0");
               const mo = d.toLocaleDateString("en-US", { month: "short" });
 
