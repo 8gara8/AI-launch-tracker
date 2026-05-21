@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-05-20",
-    "week_number": 20,
+    "last_updated": "2026-05-21",
+    "week_number": 21,
     "tracked_since": "2026-01-01"
   },
   "companies": [
@@ -87,7 +87,6 @@
       "category": "product",
       "description": "Background agent runtime. Claude executes scheduled tasks weekly without user prompting."
     },
-
     {
       "company": "openai",
       "date": "2026-01-09",
@@ -144,7 +143,6 @@
       "category": "strategic",
       "description": "FedRAMP High authorization. Dedicated tenancy in US-Gov regions for federal customers."
     },
-
     {
       "company": "google",
       "date": "2026-01-21",
@@ -194,7 +192,6 @@
       "category": "product",
       "description": "Conversational agent integrated into Android Auto. Hands-free email, navigation, calendar."
     },
-
     {
       "company": "xai",
       "date": "2026-02-12",
@@ -222,13 +219,96 @@
       "label": "Grok on X for Business",
       "category": "strategic",
       "description": "Grok agents integrated into X for Business accounts. Auto-reply, customer support workflows."
+    },
+    {
+      "company": "anthropic",
+      "date": "2026-05-14",
+      "label": "Gates Foundation AI partnership",
+      "category": "strategic",
+      "description": "$200M partnership for global health, education, and economic mobility"
+    },
+    {
+      "company": "anthropic",
+      "date": "2026-05-18",
+      "label": "Stainless acquisition",
+      "category": "strategic",
+      "description": "Acquired Stainless, the API SDK tooling company"
+    },
+    {
+      "company": "anthropic",
+      "date": "2026-05-19",
+      "label": "Managed Agents: MCP tunnels & multiagent",
+      "category": "product",
+      "description": "MCP tunnels for private networks, multiagent orchestration, Dreaming memory"
+    },
+    {
+      "company": "openai",
+      "date": "2026-05-14",
+      "label": "Codex Mobile",
+      "category": "product",
+      "description": "Codex agent in ChatGPT iOS and Android apps, 4M weekly users"
+    },
+    {
+      "company": "openai",
+      "date": "2026-05-15",
+      "label": "ChatGPT Personal Finance",
+      "category": "product",
+      "description": "Personal finance experience in ChatGPT"
+    },
+    {
+      "company": "openai",
+      "date": "2026-05-20",
+      "label": "GPT-5.2-Codex",
+      "category": "model",
+      "description": "Advanced agentic coding model with context compaction, optimized for long-horizon work"
+    },
+    {
+      "company": "google",
+      "date": "2026-05-19",
+      "label": "Gemini 3.5 Flash",
+      "category": "model",
+      "description": "Frontier intelligence + agentic tasks, 4x faster output, surpasses 3.1 Pro"
+    },
+    {
+      "company": "google",
+      "date": "2026-05-19",
+      "label": "Gemini app Neural Expressive redesign",
+      "category": "product",
+      "description": "New design system with fluid animations, compute-used pricing model"
+    },
+    {
+      "company": "xai",
+      "date": "2026-05-15",
+      "label": "Grok Build",
+      "category": "product",
+      "description": "Agentic coding CLI, 8 concurrent agents, Grok 4.3 beta with 2M context"
     }
   ],
   "watch": [
-    "Grok 5 still not shipped — watch for Q2/Q3 release given Heavy variant arrived in Feb",
-    "OpenAI IPO preparations — product consolidation rumored (Operator + Atlas under one brand)",
-    "Google's Gemini 3 Ultra pricing vs. Claude Opus 4.7 — competitive squeeze on API margins",
-    "Anthropic's Cowork is the first scheduled-agent runtime from a frontier lab — expect copies",
-    "Apple has shipped nothing on-device of note in 2026 — partnership pivot likely"
+    {
+      "label": "Google Gemini Omni GA",
+      "expected": "2026-06",
+      "note": "Video generation model announced at I/O 2026"
+    },
+    {
+      "label": "Claude Mythos preview",
+      "expected": "2026-Q2",
+      "note": "Red-team preview on red.anthropic.com"
+    },
+    {
+      "label": "OpenAI Codex Windows sandbox GA",
+      "expected": "2026-06",
+      "note": "Beta announced May 13"
+    },
+    {
+      "label": "Anthropic enterprise AI services JV",
+      "expected": "2026-Q3",
+      "note": "With Blackstone, H&F, Goldman Sachs"
+    },
+    {
+      "label": "xAI Grok Build GA",
+      "expected": "2026-Q3",
+      "note": "Currently early beta, SuperGrok Heavy only"
+    }
   ]
 }
