@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-05-25",
-    "week_number": 22,
+    "last_updated": "2026-06-01",
+    "week_number": 23,
     "tracked_since": "2026-01-01"
   },
   "companies": [
@@ -43,6 +43,9 @@
     { "company": "anthropic", "date": "2026-05-15", "label": "Advisor tool (API)", "category": "api", "description": "Opus advises Sonnet for better agent results" },
     { "company": "anthropic", "date": "2026-05-21", "label": "Compliance API integrations", "category": "api", "description": "Govern Claude via security & compliance tool integrations" },
     { "company": "anthropic", "date": "2026-05-22", "label": "Project Glasswing update", "category": "strategic", "description": "Initial results: 10k+ vulns found; Cyber Verification Program opens" },
+    { "company": "anthropic", "date": "2026-05-28", "label": "Claude Opus 4.8", "category": "model", "description": "Stronger benchmarks, effort control in claude.ai, 3x cheaper Fast mode, same price as 4.7" },
+    { "company": "anthropic", "date": "2026-05-28", "label": "Dynamic Workflows", "category": "product", "description": "Claude Code orchestrates hundreds of parallel subagents with verification (research preview)" },
+    { "company": "anthropic", "date": "2026-05-29", "label": "Managed Agents on AWS", "category": "product", "description": "Webhooks, multi-agent orchestration, self-hosted sandboxes on Claude Platform on AWS" },
 
     { "company": "openai", "date": "2026-01-07", "label": "ChatGPT Health", "category": "product", "description": "Connect medical records & wellness apps" },
     { "company": "openai", "date": "2026-01-12", "label": "GPT-5.2 Enterprise", "category": "model", "description": "Most capable model for knowledge work" },
@@ -69,6 +72,10 @@
     { "company": "openai", "date": "2026-05-14", "label": "Codex mobile", "category": "product", "description": "Work with Codex from anywhere" },
     { "company": "openai", "date": "2026-05-15", "label": "ChatGPT Personal Finance", "category": "product", "description": "Connect bank accounts via Plaid, portfolio tracking" },
     { "company": "openai", "date": "2026-05-21", "label": "Codex Appshots + Goal mode", "category": "product", "description": "macOS Appshots, Goal mode GA, locked computer use, plugin sharing" },
+    { "company": "openai", "date": "2026-05-28", "label": "GPT-5.5 Instant refresh", "category": "model", "description": "Clearer/more natural responses; in-chat writing & code blocks replace canvas" },
+    { "company": "openai", "date": "2026-05-28", "label": "Enterprise app templates", "category": "product", "description": "Workspace-specific app templates for GitHub Enterprise, Snowflake, Databricks" },
+    { "company": "openai", "date": "2026-05-29", "label": "Codex Computer Use on Windows", "category": "product", "description": "Codex sees/clicks/types in Windows apps; remote control from iOS/Android/Mac" },
+    { "company": "openai", "date": "2026-05-29", "label": "Rosalind Biodefense", "category": "strategic", "description": "Trusted access to GPT-Rosalind for US govt + allied biodefense partners (LLNL, JHU APL, CEPI)" },
 
     { "company": "google", "date": "2026-01-05", "label": "Gemini for Google TV", "category": "product", "description": "Deep dives, visual answers on TV" },
     { "company": "google", "date": "2026-01-12", "label": "Apple Siri + Gemini", "category": "strategic", "description": "Apple announces Gemini integration in Siri" },
@@ -112,15 +119,19 @@
     { "company": "xai", "date": "2026-05-06", "label": "Grok Build (coding agent)", "category": "product", "description": "$300/mo coding agent, 8 parallel agents, Arena Mode" },
     { "company": "xai", "date": "2026-05-10", "label": "App integrations", "category": "product", "description": "Deep integrations with everyday apps" },
     { "company": "xai", "date": "2026-05-12", "label": "Imagine HD upgrade", "category": "product", "description": "Higher realism, better text rendering" },
-    { "company": "xai", "date": "2026-05-21", "label": "Grok in OpenCode", "category": "product", "description": "Use SuperGrok or X Premium subscription inside OpenCode" }
+    { "company": "xai", "date": "2026-05-21", "label": "Grok in OpenCode", "category": "product", "description": "Use SuperGrok or X Premium subscription inside OpenCode" },
+    { "company": "xai", "date": "2026-05-27", "label": "Image Search in Web Search API", "category": "api", "description": "enable_image_search returns Markdown image embeds in Grok responses" },
+    { "company": "xai", "date": "2026-05-28", "label": "Grok Build 0.1 on API", "category": "api", "description": "Fastest coding model in public beta — 100+ tok/s at $1/$2 per M tokens" }
   ],
   "watch": [
     "Grok 5 still not shipped — Musk says Q2; Polymarket odds slipping as June 30 nears",
     "OpenAI IPO preparations ongoing — watching for pre-IPO product consolidation",
     "Gemini 3.5 Pro expected June after internal testing — Google I/O follow-up",
-    "Gemini Spark rolling out to Google AI Ultra subscribers (US) — wider availability to watch",
-    "Apple WWDC June — Gemini-powered Siri integration details expected",
+    "Gemini Spark Beta rolling out to Google AI Ultra subscribers (US) — wider availability to watch",
+    "Apple WWDC (June 8-12) — Gemini-powered Siri integration details expected",
     "Anthropic Code with Claude Tokyo (June 5-6) — possible new agent announcements",
-    "Anthropic Mythos-class models still gated — general release pending stronger safeguards"
+    "Anthropic Mythos-class models still gated — general release pending stronger safeguards",
+    "GPT-4.5 sunset in ChatGPT on June 27; o3 sunset on Aug 26 — model consolidation continues",
+    "Anthropic Managed Agents now on AWS — watching for Azure / GCP parity moves"
   ]
 }
