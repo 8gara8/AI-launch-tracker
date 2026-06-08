@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-06-01",
-    "week_number": 23,
+    "last_updated": "2026-06-08",
+    "week_number": 24,
     "tracked_since": "2026-01-01"
   },
   "companies": [
@@ -46,6 +46,10 @@
     { "company": "anthropic", "date": "2026-05-28", "label": "Claude Opus 4.8", "category": "model", "description": "Stronger benchmarks, effort control in claude.ai, 3x cheaper Fast mode, same price as 4.7" },
     { "company": "anthropic", "date": "2026-05-28", "label": "Dynamic Workflows", "category": "product", "description": "Claude Code orchestrates hundreds of parallel subagents with verification (research preview)" },
     { "company": "anthropic", "date": "2026-05-29", "label": "Managed Agents on AWS", "category": "product", "description": "Webhooks, multi-agent orchestration, self-hosted sandboxes on Claude Platform on AWS" },
+    { "company": "anthropic", "date": "2026-06-01", "label": "Confidential IPO filing (S-1)", "category": "strategic", "description": "Draft S-1 submitted to SEC after $65B Series H at $965B valuation" },
+    { "company": "anthropic", "date": "2026-06-02", "label": "Project Glasswing expansion", "category": "strategic", "description": "Mythos Preview to ~150 more orgs; critical-infrastructure defense in 15+ countries" },
+    { "company": "anthropic", "date": "2026-06-02", "label": "Advisor max_tokens + refusal billing", "category": "api", "description": "Cap advisor output per call; refusal-stopped requests no longer billed" },
+    { "company": "anthropic", "date": "2026-06-03", "label": "Partner Network Services Track", "category": "strategic", "description": "Services Track + Partner Hub for finding qualified Claude partners" },
 
     { "company": "openai", "date": "2026-01-07", "label": "ChatGPT Health", "category": "product", "description": "Connect medical records & wellness apps" },
     { "company": "openai", "date": "2026-01-12", "label": "GPT-5.2 Enterprise", "category": "model", "description": "Most capable model for knowledge work" },
@@ -76,6 +80,12 @@
     { "company": "openai", "date": "2026-05-28", "label": "Enterprise app templates", "category": "product", "description": "Workspace-specific app templates for GitHub Enterprise, Snowflake, Databricks" },
     { "company": "openai", "date": "2026-05-29", "label": "Codex Computer Use on Windows", "category": "product", "description": "Codex sees/clicks/types in Windows apps; remote control from iOS/Android/Mac" },
     { "company": "openai", "date": "2026-05-29", "label": "Rosalind Biodefense", "category": "strategic", "description": "Trusted access to GPT-Rosalind for US govt + allied biodefense partners (LLNL, JHU APL, CEPI)" },
+    { "company": "openai", "date": "2026-06-02", "label": "Codex role plugins", "category": "product", "description": "6 role plugins (sales, data, design, IB...) + 66 app plugins; Codex coming to ChatGPT" },
+    { "company": "openai", "date": "2026-06-02", "label": "Sites for Codex (preview)", "category": "product", "description": "Codex builds, deploys & hosts shareable web apps; annotations extend to docs/slides" },
+    { "company": "openai", "date": "2026-06-03", "label": "GPT-Rosalind update", "category": "model", "description": "Life-sciences model upgrade; leads LifeSciBench; trusted access expands globally" },
+    { "company": "openai", "date": "2026-06-04", "label": "Memory upgrade (Dreaming V3)", "category": "product", "description": "New memory architecture, summary page, 2x capacity Plus/Pro; Free rollout coming" },
+    { "company": "openai", "date": "2026-06-04", "label": "Lockdown Mode", "category": "product", "description": "Opt-in security setting limits web access to curb prompt-injection exfiltration" },
+    { "company": "openai", "date": "2026-06-04", "label": "Ads expand to UK", "category": "product", "description": "Free/Go users in UK begin seeing ads; paid plans stay ad-free" },
 
     { "company": "google", "date": "2026-01-05", "label": "Gemini for Google TV", "category": "product", "description": "Deep dives, visual answers on TV" },
     { "company": "google", "date": "2026-01-12", "label": "Apple Siri + Gemini", "category": "strategic", "description": "Apple announces Gemini integration in Siri" },
@@ -121,17 +131,20 @@
     { "company": "xai", "date": "2026-05-12", "label": "Imagine HD upgrade", "category": "product", "description": "Higher realism, better text rendering" },
     { "company": "xai", "date": "2026-05-21", "label": "Grok in OpenCode", "category": "product", "description": "Use SuperGrok or X Premium subscription inside OpenCode" },
     { "company": "xai", "date": "2026-05-27", "label": "Image Search in Web Search API", "category": "api", "description": "enable_image_search returns Markdown image embeds in Grok responses" },
-    { "company": "xai", "date": "2026-05-28", "label": "Grok Build 0.1 on API", "category": "api", "description": "Fastest coding model in public beta — 100+ tok/s at $1/$2 per M tokens" }
+    { "company": "xai", "date": "2026-05-28", "label": "Grok Build 0.1 on API", "category": "api", "description": "Fastest coding model in public beta — 100+ tok/s at $1/$2 per M tokens" },
+    { "company": "xai", "date": "2026-06-01", "label": "Composer 2.5 in Grok Build", "category": "product", "description": "Fast SOTA model for long-running tasks added to /models menu" },
+    { "company": "xai", "date": "2026-06-03", "label": "Grok Imagine 1.5 Preview (API)", "category": "api", "description": "Image-to-video model: 720p cinematic clips from a still + motion prompt" },
+    { "company": "xai", "date": "2026-06-04", "label": "Grok Voice public rollout", "category": "product", "description": "Spoken interaction live for all users in Grok app and grok.com" }
   ],
   "watch": [
-    "Grok 5 still not shipped — Musk says Q2; Polymarket odds slipping as June 30 nears",
-    "OpenAI IPO preparations ongoing — watching for pre-IPO product consolidation",
-    "Gemini 3.5 Pro expected June after internal testing — Google I/O follow-up",
-    "Gemini Spark Beta rolling out to Google AI Ultra subscribers (US) — wider availability to watch",
-    "Apple WWDC (June 8-12) — Gemini-powered Siri integration details expected",
-    "Anthropic Code with Claude Tokyo (June 5-6) — possible new agent announcements",
-    "Anthropic Mythos-class models still gated — general release pending stronger safeguards",
-    "GPT-4.5 sunset in ChatGPT on June 27; o3 sunset on Aug 26 — model consolidation continues",
-    "Anthropic Managed Agents now on AWS — watching for Azure / GCP parity moves"
+    "Grok V9-Medium (1.5T params) finished pretraining -- public release expected mid-June; Grok 5 timeline still slipping",
+    "Gemini 3.5 Pro in limited Vertex preview -- GA expected June, 2M-token context window",
+    "Gemini in Chrome on Android (Nano Banana, auto browse) launching late June",
+    "Apple WWDC underway (June 8-12) -- Gemini-powered Siri integration details expected",
+    "Anthropic subscription split June 15 -- programmatic usage moves to separate monthly credit pool",
+    "Codex integration inside ChatGPT rolling out over coming weeks; more role plugins (Legal, PE, Consulting) coming",
+    "OpenAI IPO prep continues after Anthropic's June 1 confidential S-1 -- IPO race heating up",
+    "Model sunsets: GPT-4.5 in ChatGPT June 27, o3 Aug 26, Claude Opus 4.1 retires Aug 5",
+    "ChatGPT memory Dreaming V3 expanding to Free/Go plans and more countries in coming weeks"
   ]
 }
